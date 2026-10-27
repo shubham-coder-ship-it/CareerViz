@@ -1,0 +1,43 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environment
+venv/
+venvapp/
+.env
+
+# Uploaded resumes / user data
+App/Uploaded_Resumes/*
+!App/Uploaded_Resumes/.gitkeep
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# Private runtime data and audit backups
+/App/*.db
+/App/*.db-*
+/App/backups/
+/App/datasets/
+/App/tests/tmp/
+/App/nltk_data/
+/App/models/_deleted/
+
+# User-generated analysis PDFs/previews
+/output/
+
+# CareerViz private spreadsheet/model artifacts
+/App/career_data/
+
+/App/reference_data/
+
+/.tools/

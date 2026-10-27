@@ -1,0 +1,13 @@
+# Runtime dependencies for App/App.py (tested with Streamlit 1.65).
+streamlit>=1.63,<1.66
+pandas
+python-dotenv>=0.21
+Pillow
+plotly==7.1.0
+openpyxl>=3.1
+pdfminer.six>=20220524
+reportlab>=4.0
+# Retained for the vendored compatibility utility API, not the main analysis path.
+nltk>=3.7
+docx2txt
+python-dateutil

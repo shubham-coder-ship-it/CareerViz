@@ -1,0 +1,47 @@
+# Local configuration and credentials
+.env
+.env.*
+!.env.example
+**/.streamlit/secrets.toml
+*.pem
+*.key
+
+# Python and isolated local runtimes
+venv/
+.venv/
+venvapp/
+__pycache__/
+*.py[cod]
+.tools/
+.pytest_cache/
+
+# Private user/reference data and generated reports
+**/*.db
+**/*.db-*
+**/*.sqlite*
+**/*.joblib
+**/*.pkl
+**/Uploaded_Resumes/
+**/backups/
+**/datasets/
+**/career_data/
+**/reference_data/
+**/models/
+**/nltk_data/
+**/tests/tmp/
+**/output/
+**/screenshots/
+**/Logo/RESUM.png
+*.log
+
+# Retired implementation and local audit notes
+**/archive/
+AI-Resume-Analyzer/AUDIT_*.md
+AI-Resume-Analyzer/CAREERVIZ_REBUILD.md
+AI-Resume-Analyzer/IMPLEMENTATION_NOTES.md
+
+# Workstation files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
