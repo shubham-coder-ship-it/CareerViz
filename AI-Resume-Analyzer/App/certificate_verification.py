@@ -4,9 +4,11 @@ import os
 import re
 from urllib.parse import urlencode, urlsplit
 
+DEFAULT_PUBLIC_APP_URL = 'https://careerviz7217.streamlit.app'
+
 
 def verification_url(code=''):
-    base = os.getenv('PUBLIC_APP_URL', 'http://127.0.0.1:8501').strip().rstrip('/')
+    base = (os.getenv('PUBLIC_APP_URL', '').strip() or DEFAULT_PUBLIC_APP_URL).rstrip('/')
     parts = urlsplit(base)
     if parts.scheme not in {'http','https'} or not parts.netloc or parts.username or parts.password or parts.query or parts.fragment:
         raise ValueError('PUBLIC_APP_URL must be an HTTP(S) application URL without credentials, query or fragment.')

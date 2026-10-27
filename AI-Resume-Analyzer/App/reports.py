@@ -208,5 +208,6 @@ def render_saved_analysis(conn, owner, analysis_id):
     from certificate_verification import verification_url
     st.link_button('Verify this certificate',verification_url(cert['code']))
     st.caption('Certificate '+cert['code']+' · Share this verification link only with intended recipients.')
-    if not __import__('os').getenv('PUBLIC_APP_URL'):
+    from urllib.parse import urlsplit
+    if urlsplit(verification_url()).hostname in {'localhost','127.0.0.1','::1'}:
         st.info('Certificate verification currently uses localhost. Configure PUBLIC_APP_URL before sharing it outside this computer.')
