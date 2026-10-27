@@ -255,7 +255,7 @@ This repository includes a customized `pyresparser/resume_parser.py`. It is not 
 
 ## License
 
-This repository does not currently include a license file. Contact the repository owner if you need clarification on usage terms.
+This historical section predates the current licence. CareerViz is now distributed under GPL-3.0; see the root LICENSE and NOTICE.md.
 
 ## Version 2.0 update: setup and operation
 

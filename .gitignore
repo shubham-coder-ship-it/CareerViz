@@ -45,3 +45,6 @@ AI-Resume-Analyzer/IMPLEMENTATION_NOTES.md
 Thumbs.db
 .idea/
 .vscode/
+
+# Private local admin reference; never publish
+ADMIN_ACCESS.local.md
