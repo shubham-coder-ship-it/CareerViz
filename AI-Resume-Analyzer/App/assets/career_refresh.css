@@ -20,6 +20,8 @@ html[data-ara-theme="dark"]{
 h1,h2,h3,h4,h5,h6{font-family:'Inter',sans-serif!important;font-weight:600!important;letter-spacing:-.035em!important;}
 h2{font-size:1.85rem!important;}h3{font-size:1.1rem!important;letter-spacing:-.02em!important;}
 p,li,label{line-height:1.65;}
+/* Keep the dropdown above page content despite the navbar backdrop-filter stacking context. */
+.st-key-ara_navbar{position:relative;z-index:100;overflow:visible!important;}
 .st-key-ara_navbar{background:color-mix(in srgb,var(--surface) 91%,transparent)!important;border:1px solid var(--line)!important;border-radius:24px!important;box-shadow:var(--shadow)!important;padding:12px 18px!important;backdrop-filter:blur(18px);margin-bottom:1.7rem!important;}
 .ara-brand{font-size:25px!important;letter-spacing:-1.2px!important;white-space:nowrap;}
 .ara-brand .dot{color:var(--accent)!important;}
